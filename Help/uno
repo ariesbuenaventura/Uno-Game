@@ -1,0 +1,15 @@
+[OPTIONS]
+Contents file=D:\VB Projects\uno2.2\Help\Table of Contents.hhc
+Index file=..\..\uno2.hhk
+
+[FILES]
+dealer.htm
+discardpile.htm
+obj.html
+Overview.htm
+penalties.htm
+Rules.htm
+Scoring.htm
+strategy.htm
+Uno.htm
+wordcard.htm

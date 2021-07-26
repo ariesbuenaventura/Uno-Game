@@ -1,0 +1,3 @@
+VBGROUP 5.0
+Project=Card\prjUnoCard.vbp
+StartupProject=File\prjUnoGame.vbp
