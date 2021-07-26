@@ -1,1 +1,1 @@
-Uno Game
+Uno Game (VB6)
