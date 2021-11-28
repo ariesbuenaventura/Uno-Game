@@ -107,7 +107,7 @@ Begin VB.Form frmAbout
       Index           =   0
       Left            =   960
       MousePointer    =   99  'Custom
-      Tag             =   "ravemasterharuglory@yahoo.com"
+Tag             =   "ariesbuenaventura2019@gmail.com"
       Top             =   2880
       Width           =   2655
    End
@@ -170,14 +170,14 @@ Private Sub Form_Load()
         For i = 1 To .imlStatIcons.ListImages.Count - 1
             Set picCanvas(i).Picture = .imlStatIcons.ListImages(i).Picture
             
-            B_Atom(i).Angle = i * 90 ' 0°, 90°, 180°, 270°
+            B_Atom(i).Angle = i * 90 ' 0Â°, 90Â°, 180Â°, 270Â°
             B_Atom(i).Width = picCanvas(i).ScaleWidth
             B_Atom(i).Height = picCanvas(i).ScaleHeight
         Next i
             
         For i = 1 To 3
             For j = 1 To 4
-                S_Atom(j, i).Angle = 30 + ((i - 1) * 120) ' 30°, 150°, 270°
+                S_Atom(j, i).Angle = 30 + ((i - 1) * 120) ' 30Â°, 150Â°, 270Â°
                 S_Atom(j, i).Width = picCanvas(j).ScaleWidth / 2
                 S_Atom(j, i).Height = picCanvas(j).ScaleHeight / 2
             Next j
@@ -288,11 +288,11 @@ Private Sub DrawBigAtom(ByRef B_Atom As AtomInfo, _
     RefreshWindow Me.hwnd ' same as Me.Refresh but more faster.
     
     If B_Atom.Angle > 360 Then
-        ' since that 360° = 0°, 375° = 15°...by getting
-        ' the reminder of a given angle divided by 360°
+        ' since that 360Â° = 0Â°, 375Â° = 15Â°...by getting
+        ' the reminder of a given angle divided by 360Â°
         ' we can also get the same result.
         
-        '   Ex. 450° mod 360° = 90°
+        '   Ex. 450Â° mod 360Â° = 90Â°
         
         B_Atom.Angle = B_Atom.Angle Mod 360
     Else
@@ -342,11 +342,11 @@ Private Sub DrawSmallAtom(ByRef B_Atom As AtomInfo, _
                picCanvas(Index).hdc, 0, 0, W, H, vbSrcInvert
     
     If B_Atom.Angle > 360 Then
-        ' since that 360° = 0°, 375° = 15°...by getting
-        ' the reminder of a given angle divided by 360°
+        ' since that 360Â° = 0Â°, 375Â° = 15Â°...by getting
+        ' the reminder of a given angle divided by 360Â°
         ' we can also get the same result.
         
-        '   Ex. 450° mod 360° = 90°
+        '   Ex. 450Â° mod 360Â° = 90Â°
         B_Atom.Angle = B_Atom.Angle Mod 360
     Else
         B_Atom.Angle = B_Atom.Angle + Increment
